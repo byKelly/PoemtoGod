@@ -1,5 +1,5 @@
 
 <?php
-    mail('byempresskelly@yahoo.com', $_POST['Your name'], $_POST['Your email']); $_Post['Your message']);
+    mail('byempresskelly@yahoo.com', $_POST['name'], $_POST['_replyto']); $_Post['message']);
 ?>
 <p>Your email has been sent.</p>
