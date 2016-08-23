@@ -53,22 +53,31 @@ Giving thanks to the Lord<br>
 For all that He does provide<br>
 His love ever so wide
 </br></br></br></br>
-<form 
-  action="mailto:byempresskelly@gmail.com"
-  method="POST"
-  enctype="multipart/form-data"
-  name="EmailTestForm">
+   <p class="contactme">Contact Me</p>
+    <br>
+    <form id="contactform" action="//formspree.io/byempresskelly@yahoo.com" onsubmit="handler" method="POST">
+        <p><input type="text" name="name" placeholder="Your name"></p><br>
+        <p><input type="email" name="_replyto" placeholder="Your email"></p><br>
+        <p><textarea name="message" placeholder="Your message"></textarea></p><br>
+        <input type="submit" value="Send"/>
+        <input type="hidden" name="_next" value="http://kellyportfolio.azurewebsites.net/">
+    </form>
+    <br><br><br><br>
 
-Your Name:<br>
-<input type="text" size="20" name="VisitorName"><br><br>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
 
-Your Comment:<br>
-<textarea name="VisitorComment" rows="4" cols="20">
-</textarea><br><br>
-
-<input type="submit" value=" Submit Form">
-
-</form>
+        var onsubmit = function (expected)
+        $.ajax({
+            url: "https://formspree.io/byempresskelly",
+            method: "POST",
+            data: {message: "hello!"},
+            dataType: "json"
+        });
+    </script>
 <br><br><br><br>
 Poetry by Author Empress Kelly
 <br><br><br><br>
