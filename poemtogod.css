@@ -6,3 +6,7 @@ color: purple;
 body {
   font-size: 18px;
 }
+
+img {
+  border: 7px ridge rgb(36, 29, 29);
+}
